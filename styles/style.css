@@ -10,21 +10,82 @@
 }
 
 .header {
+  display: flex;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
+  padding-left: 64px;
+  background-color:  #f2f2f2;
+  margin: auto;
+  position:relative;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
+.logo{
+  width: 228px;
+  height: 32px;
+}
+
+.logo_place_header{
+  position: absolute;
+  top: 30px;
+  background-image: url(file:///C:/Users/user/how-to-learn/images/logo_place_header.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .header__title{
+  align-self: center;
+  font-size: 102px;
+  font-weight: 600;
   width: 730px;
-  display:flex;
+}
+
+.header__title > p{
+  display: inline;
+  line-height: 96px;
+}
+
+/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+
+.header__subtitle{
+  position: absolute;
+  bottom: 30px;
+  width: 388px;
+  font-size: 18px;
+  font-style: normal;
+}
+
+.header__subtitle > p{
+  display: inline;
+  line-height: 25px;
+}
+
+a{
+  text-decoration: none;
+  color:  #2f80ed;
+}
+
+.header__main-illustration{
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  z-index: 1;
+}
+
+.header__main-illustration > img{
+  height: 608px;
+  width: 765px;
+}
+
+.header__square-pic {
+  height: 568px;
+  width: 568px;
+  background-color:  #2f80ed;
+  position: absolute;
+  z-index: 0;
+  right: 0px;
+  top: 64px;
 }
 
 /* и элемента с модификатором вида ключ-значение */

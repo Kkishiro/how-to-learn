@@ -39,9 +39,6 @@
   font-size: 102px;
   font-weight: 600;
   width: 730px;
-}
-
-.header__title > p{
   display: inline;
   line-height: 96px;
 }
@@ -282,7 +279,7 @@
   z-index: 2;
 }
 
-.kaufman_triangle{
+.kaufman__triangle{
   width: 877px;
   height: 877px;
   position: absolute;
@@ -313,13 +310,26 @@
   position: relative;
 }
 
+.footer__column{
+  display: flex;
+  flex-direction: column;
+}
+
 .footer__column_content_copyright{
   width: 50%;
+  justify-content: space-between;
+  border: 1px solid red;
+}
+
+.footer__column_content_social{
+  border: 1px solid red;
+}
+
+.footer__column_content_info{
+  border: 1px solid red;
 }
 
 .logo_place_footer{
-  position: absolute;
-  top: 0;
   background-image: url(file:///C:/Users/user/how-to-learn/images/logo_place_footer.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -327,11 +337,6 @@
 
 .footer__author{
   margin: 18px 0px;
-  position: absolute;
-  bottom: 0;
-}
-
-.footer__author > p{
   display: inline;
   line-height: 25px;
   font-size: 18px;

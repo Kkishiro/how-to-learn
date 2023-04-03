@@ -1,0 +1,8 @@
+.techniques{
+  margin: 100px auto 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+  max-width: 80%;
+}

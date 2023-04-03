@@ -24,6 +24,7 @@
   background-color:  #f2f2f2;
   margin: auto;
   position:relative;
+  overflow: hidden;
 }
 
 .logo{
@@ -90,7 +91,7 @@
 }
 
 .description{
-  margin: 100px auto;
+  margin: 100px auto 0px;
   display: flex;
   justify-content: center;
 }
@@ -200,7 +201,85 @@
   font-style: normal;
 }
 
+.techniques{
+  margin: 100px auto 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+  max-width: 80%;
+}
+
+.cards{
+  width: 920px;
+  margin:0px auto;
+  padding: 0px;
+  display:flex;
+  gap:0 100px;
+  flex-wrap:wrap;
+  list-style-type:none;
+  overflow: hidden;
+}
+
+.cards__item{
+  width: 240px;
+  padding: 0px;
+  margin:60px 0px 0px;
+  text-align: center;
+}
+
+.cards__image{
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  margin: 60px 40px 43px;
+}
+
+.cards__title{
+  display: inline;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.cards__description{
+  display: flex;
+  margin: 16px 0px 0px;
+  line-height: 23px;
+  font-size: 18px;
+  font-style: normal;
+}
+
+.video{
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+  max-width: 80%;
+  transform: translateY(60px);
+}
+
+.video__iframes{
+  margin: 50px auto 0px;
+}
+
+.video__iframe{
+  margin: 0px;
+  height: 316px;
+  width: 515px;
+}
+
+.oakley{
+  margin: 0px auto;
+  padding: 160px 0px 100px;
+  display: flex;
+  justify-content: center;
+  background-color:  #f2f2f2;
+}
+
 .feynman{
+  margin:0px;
   background-color:  #f2f2f2;
   background-image: url('../images/feynman.png');
   background-repeat: no-repeat;
@@ -216,7 +295,6 @@
 
 .feynman__title{
   margin: 0px;
-  margin-top: 100px;
   width: 648px;
   text-align: center;
   display: inline;
@@ -245,6 +323,89 @@
   line-height: 51px;
   font-size: 36px;
   font-style: normal;
+}
+
+.khan{
+  margin: 0px auto;
+  padding-top: 105px;
+  background-color:  #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.khan__container{
+  margin: 0px 0px;
+  width: 80%;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.khan__author{
+  margin: 0px 0px;
+  padding: 0px;
+  display: inline;
+  line-height: 42px;
+  font-size: 30px;
+  font-style: normal;
+}
+
+.khan__title{
+  padding: 0px;
+  display: inline;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+  margin: 0px 0px 50px;
+}
+
+.khan__quote{
+  line-height: 34px;
+  font-size: 24px;
+  font-style: normal;
+  max-width: 790px;
+  margin: 0px 0px 36px;
+}
+
+.khan__quote-author{
+  display: inline;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0px 0px 10px;
+}
+
+.khan__quote-author-subline{
+  line-height: 1.15;
+  font-size: 24px;
+  font-style: normal;
+  margin: 0px 0px 68px;
+}
+
+.khan__book-container{
+  margin: 0px 0px;
+  width: 80%;
+  display: flex;
+  gap:0px 48px;
+}
+
+.khan__book-pic{
+  margin: 0px 0px;
+  display: flex;
+  object-fit: cover;
+  object-position: top left;
+  width: 608px;
+  height: 620px;
+}
+
+.khan__buy-link{
+  display: flex;
+  margin: 0px 0px;
+  line-height: 42px;
+  font-size: 30px;
+  font-style: normal;
+  color:  #2f80ed;
 }
 
 .kaufman{
@@ -278,10 +439,36 @@
   position: absolute;
   right: -210px;
   top: 0%;
-  background-image: url('../images/kaufman-triangle.svg');
+  background-image: url('/images/kaufman-triangle.svg');
   background-repeat: no-repeat;
   background-size: contain;
   z-index: 1;
+}
+
+.resources{
+  margin: 100px auto 217px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+}
+
+.resources__logo-zone{
+  margin: 80px auto 0px;
+  padding: 0px;
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.resources__link{
+  width: 270px;
+  height: 38px;
+  margin: 0px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .footer {
@@ -370,4 +557,17 @@
   width: 16px;
   height: 16px;
   margin-right: 10px;
+}
+
+.rotation{
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate{
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
 }

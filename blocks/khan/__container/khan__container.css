@@ -1,0 +1,7 @@
+.khan__container{
+  margin: 0px 0px;
+  width: 80%;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
+}

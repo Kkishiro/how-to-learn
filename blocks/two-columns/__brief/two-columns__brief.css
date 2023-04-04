@@ -1,10 +1,9 @@
 .two-columns__brief{
-  width: 175px;
+  max-width: 175px;
   display: flex;
   margin-block: 0;
   line-height: 1.2;
   font-size: 18px;
-  font-style: normal;
   color:  #2f80ed;
-  font-weight: lighter;
+  font-weight: normal;
 }

@@ -1,11 +1,10 @@
 .section-subtitle{
   text-align: center;
-  width:60%;
+  max-width:60%;
   margin: 0px;
   margin-top: 20px;
   display: inline;
   line-height: 34px;
   font-size: 24px;
-  font-style: normal;
-  font-weight: lighter;
+  font-weight: normal;
 }
